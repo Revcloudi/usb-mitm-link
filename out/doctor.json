@@ -1,0 +1,87 @@
+{
+  "serial": "FA7BM1A06928",
+  "healthy": true,
+  "ts": "2026-09-29 19:08:31",
+  "items": [
+    {
+      "key": "adb",
+      "title": "adb 可用",
+      "level": "hard",
+      "status": "ok",
+      "detail": "C:\\platform-tools\\adb.EXE  |  Android Debug Bridge version 1.0.41",
+      "hint": ""
+    },
+    {
+      "key": "device",
+      "title": "设备在线（USB 调试已授权）",
+      "level": "hard",
+      "status": "ok",
+      "detail": "FA7BM1A06928  （在线 1 台）",
+      "hint": ""
+    },
+    {
+      "key": "root",
+      "title": "ROOT 可用，且 su 【免交互】",
+      "level": "hard",
+      "status": "ok",
+      "detail": "uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0",
+      "hint": ""
+    },
+    {
+      "key": "app_process",
+      "title": "app_process 可用（免装 APK 起代理）",
+      "level": "hard",
+      "status": "ok",
+      "detail": "/system/bin/app_process",
+      "hint": ""
+    },
+    {
+      "key": "tmp",
+      "title": "/data/local/tmp 可写",
+      "level": "hard",
+      "status": "ok",
+      "detail": "WRITABLE",
+      "hint": ""
+    },
+    {
+      "key": "reverse",
+      "title": "adb reverse 可用（本方案核心动作）",
+      "level": "hard",
+      "status": "ok",
+      "detail": "支持（已实测建立并清理）",
+      "hint": ""
+    },
+    {
+      "key": "cert",
+      "title": "MITM 证书在【系统证书区】",
+      "level": "soft",
+      "status": "ok",
+      "detail": "系统区 142 张；用户区另有 4 张（对 targetSdk>=24 的 App 无效）",
+      "hint": ""
+    },
+    {
+      "key": "ports",
+      "title": "PC 侧端口空闲",
+      "level": "hard",
+      "status": "warn",
+      "detail": "被占用: pc_mitm_port:8888",
+      "hint": "pc_mitm_port 被占用通常是 MITM 已在跑（正常）；phone_proxy_port 被占用说明链路可能已建立，可先 status 看看"
+    },
+    {
+      "key": "network",
+      "title": "手机网络可达 + 路由正确",
+      "level": "soft",
+      "status": "skip",
+      "detail": "未发现 VPN 接口; 未配置 route_target，跳过目标可达性",
+      "hint": "在 config.json 里设 route_target=<内网IP或域名> 可启用本项检查"
+    },
+    {
+      "key": "residue",
+      "title": "无上次残留的链路",
+      "level": "info",
+      "status": "ok",
+      "detail": "干净",
+      "hint": ""
+    }
+  ]
+}
